@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is Demo System for object detection">
+    <meta name="author" content="Evander Jones">
+    <title>ThruData v1.0</title>
+
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="/static/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" method="POST">
+                            {{ login_form.csrf_token }}
+                            <fieldset>
+                                <div class="form-group">
+                                    {{ login_form.email(class="form-control", placeholder="E-mail", class_='required') }}
+                                </div>
+                                <div class="form-group">
+                                    {{ login_form.password(class="form-control", placeholder="Password", class_='required') }}
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" href="/" class="btn btn-lg btn-success btn-block">Login</button>
+                            </fieldset>
+                        </form>
+                        <br/>
+                        <br/>
+                        <a href="/register" class="btn btn-lg btn-default btn-block">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="/static/dist/js/sb-admin-2.js"></script>
+</body>
+
+</html>
