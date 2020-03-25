@@ -1,4 +1,4 @@
-# Thru-Restaurant
+# CV_THRU_ANALYZE
 
 ## 1. Features
 
